@@ -127,7 +127,8 @@ ProwlNotification.prototype.removeAccessory = function (accessory) {
 }
 
 ProwlNotification.prototype.getState = function (thisSwitch, callback) {
-    callback(null);
+    var currentState = false
+    callback(null, currentState);
 }
 
 ProwlNotification.prototype.setState = function (thisSwitch, state, callback) {
